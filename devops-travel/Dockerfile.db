@@ -1,0 +1,4 @@
+# Dockerfile.mariadb
+FROM mariadb:10.3
+ENV MYSQL_ROOT_PASSWORD root
+COPY ./init.sql /docker-entrypoint-initdb.d/
